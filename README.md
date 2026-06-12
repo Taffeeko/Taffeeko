@@ -4,5 +4,5 @@ Proficient in C#, experienced with C++ and Python. Familiar with React and TypeS
 
 ![Top Languages](./assets/top-langs.svg)
 <a href="https://taffeeko.github.io/meow-click-thing">
-  <img src="assets/chocola_mini_sitting.png" width="162" align="right">
+  <img src="assets/chocola_mini_sitting.png" width="164" align="right">
 </a>
