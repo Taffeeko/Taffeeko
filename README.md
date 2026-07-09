@@ -1,6 +1,6 @@
 I write silly lines of code to make the silly computer do silly things.
 
-Proficient in C#, experienced with C++ and Python. Familiar with React and TypeScript.
+Proficient in C#, Python and C++. Experienced with React and TypeScript.
 
 ![Top Languages](./assets/top-langs.svg)
 <a href="https://taffeeko.github.io/meow-click-thing">
