@@ -1,5 +1,8 @@
 name: Update README cards
 
+env:
+  THEME: chartreuse-dark
+
 on:
   schedule:
     - cron: "0 7 * * *" # Runs at 07:00 UTC
@@ -14,8 +17,16 @@ jobs:
       - name: Generate stats card
         uses: stats-organization/github-readme-stats-action@v2.0.1
         with:
+          card: stats
+          options: username=${{ github.repository_owner }}&theme=${{ env.THEME }}&hide_rank=true&show_icons=true&include_all_commits=true&disable_animations=true
+          path: assets/stats.svg
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Generate top langs card
+        uses: stats-organization/github-readme-stats-action@v2.0.1
+        with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=donut&theme=vue-dark&disable_animations=true&size_weight=0.5&count_weight=0.5
+          options: username=${{ github.repository_owner }}&layout=donut&theme=${{ env.THEME }}&disable_animations=true&size_weight=0.5&count_weight=0.5
           path: assets/top-langs.svg
           token: ${{ secrets.GH_PAT }}
 
