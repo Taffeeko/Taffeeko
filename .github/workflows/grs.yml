@@ -18,9 +18,8 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2.0.1
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&theme=${{ env.THEME }}&hide_rank=true&show_icons=true&include_all_commits=true&disable_animations=true
+          options: username=${{ github.repository_owner }}&theme=${{ env.THEME }}&hide_rank=true&show_icons=true&include_all_commits=true&number_precision=2&disable_animations=true
           path: assets/stats.svg
-          token: ${{ secrets.GH_PAT }}
 
       - name: Generate top langs card
         uses: stats-organization/github-readme-stats-action@v2.0.1
